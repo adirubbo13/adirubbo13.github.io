@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<head>
+    <meta charset="utf-8">            
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Donate</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href="donate.css">
+</head>
+<body>
+    <div id="grid">
+        <a href="index.html" class="logolink">
+            <nav class="logo"></nav>
+        </a>
+        <nav class="links">
+            <div id=links>
+                <a href="adopt.html">Adopt</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Help Us</button>
+                  <div class="dropdown-content">
+                    <a href="donate.html">Donate</a>
+                    <a href="volunteer.html">Volunteer</a>
+                  </div>
+                </div>
+                <a href="careandtraining.html">Care and Training</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+            </div>
+        </nav>
+        <nav class="search">
+            <textarea>Search</textarea>
+        </nav>
+        
+        <aside>
+            
+            <div class="donation-box">
+	            <div class="title">Donation Information</div>
+	            
+	            <div class="fields">
+		            <input type="text" id="firstName" placeholder="First Name"> </input>
+		            <input type="text" id="lastName" placeholder="Last Name"> </input>
+		            <input type="text" id="email" placeholder="Email"> </input>
+	            </div>
+	            
+	            <div class="amount">
+		            <div class="button">$30</div>
+		            <div class="button">$50</div>
+		            <div class="button">$100</div>
+		            <div class="button">$<input type="text" class="set-amount" placeholder=""> </input></div>
+	            </div>
+	            
+	            <div class="switch">
+					<input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
+					<label for="one-time" class="switch-label switch-label-off">One-Time</label>
+					<input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
+					<label for="monthly" class="switch-label switch-label-on">Monthly</label>
+					<span class="switch-selection"></span>
+			    </div>
+			    
+			    <div class="checkboxes">
+					<input type="checkbox" id="receipt" class="checkbox" />
+					<label for="receipt">Email Me A Receipt</label>
+					<br />
+					<input type="checkbox" id="anon" class="checkbox" />
+					<label for="anon">Give Anonymously</label>
+					<br />
+					<input type="checkbox" id="list" class="checkbox" />
+					<label for="list">Add Me To Email List</label>
+			    </div>
+			    
+			    <div class="confirm">
+				    
+			    </div>
+	            
+	            <div class="donate-button"><i class="fa fa-credit-card"></i> Donate Now</div>
+            </div>
+            
+        </aside>
+        
+        <a href="index.html" class="logolinkfooter">
+            <footer class="logo"></footer>
+        </a>
+        <footer class="links">
+            <div id=footerlinks>
+                <a href="adopt.html">Adopt</a>
+                <a href="donate.html">Donate</a>
+                <a href="volunteer.html">Volunteer</a>
+                <a href="careandtraining.html">Care and Training</a>
+                <a href="aboutus.html">About Us</a>
+            </div>
+        </footer>
+        <footer class="text">
+            <p>Pixy's Animal Rescue is an animal shelter located in Rochester, NY. Here at Pixy's we offer a wide range of animals which you can welcome into your family.</p>
+        </footer>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://raw.githubusercontent.com/jerryluk/jquery.autogrow/master/jquery.autogrow-min.js"></script>
+
+</body>
+</HTML>
