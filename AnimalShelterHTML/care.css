@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@media only screen  and (min-width: 768px) {
+    #grid{ /* Sets up main grid*/
+        display: grid;
+        grid-template-columns: repeat(21, 1fr); 
+        grid-auto-rows: minmax(80px,80px); 
+        column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    a.logolink{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1; 
+        grid-row-end: 2;
+    }
+    nav.links{
+        grid-column-start: 4;
+        grid-column-end: 19;
+        grid-row-start: 1; 
+        grid-row-end: 2;
+    }
+    
+    .main{
+        grid-column-start: 8;
+        grid-column-end: 16;
+        grid-row-start: 3; 
+        grid-row-end: 6;
+        text-align: center;
+    }
+    
+    .featured{
+        grid-column-start: 8;
+        grid-column-end: 16;
+        grid-row-start: 6; 
+        grid-row-end: 7;
+        text-align: center;
+    }
+    
+    .featured2{
+        grid-column-start: 8;
+        grid-column-end: 16;
+        grid-row-start: 13; 
+        grid-row-end: 14;
+        text-align: center;
+    }
+    
+    .dog1{
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 7; 
+        grid-row-end: 11;
+        text-decoration: none;
+        background-image: url(Assets/dog.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2em;
+    }
+    
+    .dog2{
+        grid-column-start: 10;
+        grid-column-end: 14;
+        grid-row-start: 7; 
+        grid-row-end: 11;
+        text-decoration: none;
+        background-image: url(Assets/dogeating.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2em;
+    }
+    
+    .dog3{
+        grid-column-start: 17;
+        grid-column-end: 21;
+        grid-row-start: 7; 
+        grid-row-end: 11;
+        text-decoration: none;
+        background-image: url(Assets/dogtrain.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2em;
+    }
+    
+    .cat1{
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 14; 
+        grid-row-end: 18;
+        text-decoration: none;
+        background-image: url(Assets/cat1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2em;
+    }
+    
+    .cat2{
+        grid-column-start: 10;
+        grid-column-end: 14;
+        grid-row-start: 14; 
+        grid-row-end: 18;
+        text-decoration: none;
+        background-image: url(Assets/cateating.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2em;
+    }
+    
+    .cat3{
+        grid-column-start: 17;
+        grid-column-end: 21;
+        grid-row-start: 14; 
+        grid-row-end: 18;
+        text-decoration: none;
+        background-image: url(Assets/cattrain.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2em;
+    }
+    
+    .button {
+        background-color: #F4505E;
+        border: none;
+        color: white;
+        padding: 13px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        transition-duration: 0.3s;
+    }
+    
+    .button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    
+    #links{ /* Sets up main grid*/
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); 
+        grid-auto-rows: minmax(80px,80px); 
+        column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .dropbtn {
+      color: black;
+        background-color: #fff7f5;
+      border: none;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: lightgray;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {background-color: #ddd;}
+    .dropdown:hover .dropdown-content {display: block;}
+    nav.search{
+        grid-column-start: 19;
+        grid-column-end: 22;
+        grid-row-start: 1; 
+        grid-row-end: 2;
+    }
+    a.logolinkfooter{
+        grid-column-start: 1;
+        grid-column-end: 8;
+        grid-row-start: 20; 
+        grid-row-end: 23;
+    }
+    footer.links{
+        grid-column-start: 8;
+        grid-column-end: 13;
+        grid-row-start: 20; 
+        grid-row-end: 23;   
+    }
+    #footerlinks{ /* Sets up main grid*/
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-auto-rows: minmax(48px,48px); 
+        column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    footer.text{
+        grid-column-start: 13;
+        grid-column-end: 22;
+        grid-row-start: 20; 
+        grid-row-end: 23;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #grid{ /* Sets up main grid*/
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-auto-rows: minmax(100px,100px); 
+        column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    a.logolink{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1; 
+        grid-row-end: 2;
+    }
+    nav.links{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2; 
+        grid-row-end: 3;
+    }
+    
+    .main{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3; 
+        grid-row-end: 6;
+        text-align: center;
+    }
+    
+    .featured{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6; 
+        grid-row-end: 7;
+        text-align: center;
+    }
+    
+    .featured2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 19; 
+        grid-row-end: 20;
+        text-align: center;
+    }
+    
+    .dog1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7; 
+        grid-row-end: 10;
+        text-decoration: none;
+        background-image: url(Assets/dog.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2em;
+    }
+    
+    .dog2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 11; 
+        grid-row-end: 14;
+        text-decoration: none;
+        background-image: url(Assets/dogeating.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2em;
+    }
+    
+    .dog3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 15; 
+        grid-row-end: 18;
+        text-decoration: none;
+        background-image: url(Assets/dogtrain.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2em;
+    }
+    
+    .cat1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 20; 
+        grid-row-end: 23;
+        text-decoration: none;
+        background-image: url(Assets/cat1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2em;
+    }
+    
+    .cat2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 24; 
+        grid-row-end: 27;
+        text-decoration: none;
+        background-image: url(Assets/cateating.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2em;
+    }
+    
+    .cat3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 28; 
+        grid-row-end: 31;
+        text-decoration: none;
+        background-image: url(Assets/cattrain.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2em;
+    }
+    
+    .button {
+        background-color: #F4505E;
+        border: none;
+        color: white;
+        padding: 13px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        transition-duration: 0.3s;
+    }
+    
+    .button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    
+    #links{ /* Sets up main grid*/
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); 
+        grid-auto-rows: minmax(80px,80px); 
+        column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .dropbtn {
+      color: black;
+        background-color: #fff7f5;
+      border: none;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: lightgray;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {background-color: #ddd;}
+    .dropdown:hover .dropdown-content {display: block;}
+    nav.search{
+        visibility: hidden;
+    }
+    a.logolinkfooter{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 32; 
+        grid-row-end: 34;
+        visibility: hidden;
+    }
+    footer.links{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 34; 
+        grid-row-end: 35;
+        text-align: center;
+        font-size: 60px;
+        visibility: hidden;
+    }
+    footer.text{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 35; 
+        grid-row-end: 37;
+        text-align: center;
+            visibility: hidden;
+    }
+}
+h1,h2,p,a,.dropbtn,textarea{
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+   font-size: 32px;
+    color: #f4505e;
+}
+h2{
+    font-size: 26px;
+    color: #f4505e;
+}
+p{
+    font-size: 22px; 
+}
+a,.dropbtn{
+    font-size: 16px; 
+}
+nav,footer,a{
+    background-color: #fff7f5;
+    border-style: none;
+}
+nav.links{
+    text-align: center;
+}
+#navtext{
+    padding: 20px;
+}
+a:link, a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:link.logolink, a:visited.logolink, a:hover.logolink{
+    text-decoration: none;
+    background-image: url(Assets/pixyslogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+a:link.logolinkfooter, a:visited.logolinkfooter, a:hover.logolinkfooter{
+    text-decoration: none;
+    background-image: url(Assets/pixyslogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
