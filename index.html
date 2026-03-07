@@ -1,141 +1,444 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Tony's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony DiRubbo | Data Scientist & AI Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Tony DiRubbo</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="outcomes.html" class="nav-link">Learning Outcomes</a>
+                <a href="misc/PortfolioResume.pdf" class="nav-link" target="_blank"><i class="fas fa-file-pdf"></i> Resume</a>
+                <a href="#" class="nav-link" id="videoBtn"><i class="fas fa-play-circle"></i> Video</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h1><strong>Tony DiRubbo</strong>, a computer scientist currently interested in the fields of data science, web development, and software engineering</h1>
-				</div>
-			</header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Tony DiRubbo</h1>
+                <p class="hero-subtitle">Data Scientist & AI Engineer</p>
+                <p class="hero-description">
+                    Building intelligent systems at the intersection of artificial intelligence and data infrastructure.
+                    Currently exploring the applications of large language models in real-world applications while
+                    maintaining a strong foundation in data engineering.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="misc/images/avatar.jpg" alt="Tony DiRubbo" class="avatar">
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
-		<!-- Main -->
-			<div id="main">
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a graduate student at Syracuse University studying Applied Data Science, with a focus on
+                    Artificial Intelligence and Data Pipelines & Platforms. My journey in data science began during
+                    my undergraduate studies at St. John Fisher University, where I developed a strong foundation
+                    in statistical reasoning and computational thinking.</p>
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-						</header>
-						<p>I am currently a graduate student at Syracuse University studying and practicing in the expanding world of computer and data science. I am interested in database development, web development, advanced data analysis, as well as business-to-business software development. I am currently exploring the many pathways of analytics as they cross into areas of study such as healthcare, advertising, and finance. I am also interested in both front-end and back-end web design.</p>
-						<p>I completed my undergrad at St. John Fisher University, where I was on the track and cross-country teams, as well as a peer math tutor for various statistics and computer science courses. Throughout my education at St. John Fisher, I have had the privilege of working with clients to produce work in a professional-like setting.</p>
-						<p>This portfolio highlights various assignments I have completed to demonstrate my proficiency in many computer science topics. It is a living testament to my ability to embrace and master a multitude of languages and frameworks. Whether it's crafting responsive and intuitive user interfaces with HTML, CSS, and JavaScript, or delving into the intricacies of backend development using Python or Java, I thrive on the challenge of creating robust and scalable solutions.</p>
-					</section>
+                    <p>My academic work has been complemented by professional experiences at CooperVision and Tessy
+                    Corporation, where I've applied data science concepts to production systems. I'm currently
+                    working as a Graduate Student AI Researcher, developing adaptive AI resources for education.</p>
 
-					<section id="projects">
-						<h2 style="color:#000E54">Graduate Projects at Syracuse University</h2>
-						<a href="https://github.com/adirubbo13/LLMPoweredRecipeAssistant">Large Language Model Dietician App</a>
-						<li>Built a multi-agent AI application to provide personalized recipe recommendations based on user goals</li>
-						<li>Integrated OpenAI API to automatically detect pantry ingredients from photos for quick analysis</li>
-						<li>Orchestrated AI agents with LangChain to work in parallel to sort recipes with quick response </li>
-						<li>Implemented persistent user profiles with long-term memory to maintain dietician goals and preferences</li>
-						<a href="pdf_documents/DLPredictNutritionalContentReport.pdf">Deep Learning to Predict Nutritional Content of Food from Images </a>
-						<li>Curated MM-Food-100K by parsing nutrient fields and selecting the top 50 classes for balanced training</li>
-						<li>Built a ResNet-50 transfer learning model with augmentation, frozen layers, and epoch optimization</li>
-						<li>Created a multithreaded pipeline to download, validate, and preprocess 100K+ food images</li>
-						<li>Mapped model predictions to mean nutrient vectors to infer calories and macros from a single image</li>
-						<a href="">Data Warehouse Optimized ETL </a>
-						<li>Built a Python, Snowflake, and dbt, ETL pipeline to ingest IMDb data and load conformed dimensions</li>
-						<li>Modeled fact tables for ratings, releases, and genre trends with clear grains, keys, and documentation</li>
-						<li>Designed dimensional schemas for title, genre, time, person, and country to standardize analytics</li>
-						<li>Created Power BI dashboards to visualize rating patterns, release volumes, and genre performance</li>
-						<a href="pdf_documents/DistilllationPaper.pdf">LLM Knowledge Distillation</a>
-						<li>Developed a paper on how to utilize a large language model to produce smaller, specific, models</li>
-						<li>Trained a model from Meta’s Llama 3.1 and Google’s BERT to identify spinal cord diseases</li>
-						<li>PyTorch was utilized to establish the model’s framework, with CUDA allocation for efficient processing</li>
-						<li>Presented findings at a keynote presentation</li>
-						<a href="project_source_code/MLPredictDiabetesSourceCode.html">Machine Learning to Predict Diabetes</a>
-						<li>Built ML pipelines to predict Type II diabetes using non-clinical data from the CDC BRFSS survey</li>
-						<li>Engineered and encoded 28+ features; applied SMOTE and PCA to handle high dimensionality</li>
-						<li>Compared classification models (Logistic Regression, Random Forest, XGBoost, Neural Networks)</li>
-						<li>Applied cross-validation, threshold tuning, focal loss, and synthetic sampling to improve performance</li>
-						<a href="pdf_documents/LACCTiCReport.pdf">API Evaluation and Analysis</a>
-						<li>Worked with a PhD graduate to evaluate their API which is used to rank cross country races</li>
-						<li>Used Python libraries including Pandas, Matplotlib, and MongoDB to read and evaluate JSON data</li>
-						<li>Developed a report which evaluates the performance of the API based on key metrics</li>
-						<li>Created a program which allows for quick analysis of future races <a href="project_source_code/LACCTICSourceCode.html">Source Code</a> </li>
-						<h2> </h2>
-						<h2 style="color:#993333">Undergraduate Projects at St. John Fisher University </h2>
-						<a href="MLHD/mlhd.html">Machine Learning with Heart Disease</a>
-						<li>Developed models which input various recorded health metrics to predict heart disease development</li>
-						<li>Project was completed alone with mentorship from a professor</li>
-						<li>R, Excel, and Python were utilized to create various models which were evaluated against one another</li>
-						<li>Findings were presented at an end of semester conference for senior thesis projects</li>
-						<a href="pdf_documents/KeystonePostPeerReviewed.pdf">Award Winning Data Journalism Article</a>
-						<li>Used data to prove if the NYC fully remote school district was a viable option </li>
-						<li>Data was independently collected and sorted with MS Excel, then Tableau was used for visualizations</li>
-						<li>Techniques from Tableau were developed on from a marketing visualization class</li>
-						<li>The article won awards and scholarships from the Washington Media Scholars Foundations</li>
-						<!--<a href="https://github.com/adirubbo13/CS-50-Final-Project">Harvard's CS50 Certificate and Final Project</a>-->
-						<br>
-						<a href="pdf_documents/AdvancedGoogleAnalyticsCertificate copy.pdf">Google Analytics Certificate Course</a>
-					</section>
+                    <p>What drives me is the opportunity to translate complex data into actionable insights and
+                    build systems that are both technically sound and user-focused. Whether it's designing data
+                    warehouses, developing machine learning models, or creating AI-powered applications, I'm
+                    passionate about creating value through data.</p>
 
-				<!-- Two -->
-					<section id="two">
-						<h2>Related Work Experience</h2>
-						<p style="margin: 0; padding: 0;">Syracuse University <strong>Graduate Student AI Researcher</strong> January 2025 - Present</p>
-							<li>Developing adaptive AI resources to enhance student learning and engagement.</li>
-							<li>Collaborating with a team of five graduate students, meeting bi-weekly to coordinate research efforts.</li>
-							<li>Leading semester-based projects focused on consistent AI themes across multiple terms.</li>
-							<li>Presenting research progress and outcomes at end-of-semester poster symposiums.</li>
-						<br><br>
-						<p style="margin: 0; padding: 0;">CooperCompanies <strong>Master Data Co-op</strong> March 2025 - August 2025</p>
-							<li>Utilized Java, Visual Basic, and Oracle to develop applications to assist with the data pipeline</li>
-							<li>Constructed Python scripts to perform large-scale data changes and updates</li>
-							<li>Reviewed and signed-off on data entry/changes to ensure data governance between regional systems</li>
-							<li>Pulled data for inquiry and analysis for finance, sustainability, and customer service teams using SQL</li>
-						<br><br>
-						<p style="margin: 0; padding: 0;">St John Fisher University <strong>Peer Math and Computer Science Tutor</strong> August 2021 - May 2024</p>
-							<li>Aided students in their development of various math and computer science principals</li>
-							<li>Students requested appointments on a short-term basis and could also visit during assigned hours</li>
-							<li>Technical support for Microsoft Excel, R, and Java was also given</li>
-							<li>Students found themselves able to properly explain concepts and not need to request further support </li>
-						<br><br>
-						<p style="margin: 0; padding: 0;">Team Connection, NC <strong>Web Development Intern</strong> Summer 2023</p>
-							<li>Maintained and developed the storefront and website for the Team Connection brand</li>
-							<li>Was the sole developer and worked closely with the president and marketing director</li>
-							<li>Utilized WordPress, JavaScript, and SQL to develop webpages and maintain storefront data</li>
-							<li>Internship concluded with a presentation with recommended next steps for the brand’s webpage</li>
-					</section>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-code skill-icon"></i>
+                            <span class="skill-name">Python & R</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database skill-icon"></i>
+                            <span class="skill-name">Data Warehousing</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain skill-icon"></i>
+                            <span class="skill-name">Machine Learning</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cloud skill-icon"></i>
+                            <span class="skill-name">Cloud Platforms</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-pie skill-icon"></i>
+                            <span class="skill-name">Data Visualization</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code skill-icon"></i>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code skill-icon"></i>
+                            <span class="skill-name">Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server skill-icon"></i>
+                            <span class="skill-name">DevOps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			</div>
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section featured-projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/tonydirubbo/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/adirubbo13" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="pdf_documents/WebResume.pdf" class="icon solid fa-file-pdf"><span class="label">Resume</span></a></li>
-						<li><a href="mailto:afdirubb@syr.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="https://www.instagram.com/tonydirubbo/" class="icon brands fa-instagram"><span class="label">Github</span></a></li>
-						<li><a href="https://huggingface.co/adirubbo13" class="icon solid fa-smile-beam"><span class="label">HuggingFace</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; December 15th, 2025</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+            <!-- Project 1: LLM Dietician App -->
+            <div class="project-card highlight">
+                <div class="project-header">
+                    <span class="project-badge">Featured</span>
+                    <h3 class="project-title">Large Language Model Dietician App</h3>
+                    <a href="https://github.com/adirubbo13/LLMPoweredRecipeAssistant" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+                <div class="project-content">
+                    <p>Built a multi-agent AI application to provide personalized recipe recommendations based on user dietary goals and preferences. This was the final project for the Building Human-Centered AI Applications course.</p>
+                    <ul class="project-bullets">
+                        <li><strong>Built</strong> a multi-agent AI application to provide personalized recipe recommendations based on user goals</li>
+                        <li><strong>Integrated</strong> OpenAI API to automatically detect pantry ingredients from photos for quick analysis</li>
+                        <li><strong>Orchestrated</strong> AI agents with LangChain to work in parallel for quick response times</li>
+                        <li><strong>Implemented</strong> persistent user profiles with long-term memory to maintain dietician goals and preferences</li>
+                    </ul>
+                    <div class="learning-outcomes">
+                        <h4>Learning Outcomes Demonstrated:</h4>
+                        <ul>
+                            <li><strong>Outcome 1 (Data Collection/Storage):</strong> Collected recipes from external sources, stored them in a structured RAG database, and designed user tables for secure data access</li>
+                            <li><strong>Outcome 2 (Actionable Insight):</strong> Transformed raw user inputs into actionable dietary recommendations through multi-agent analysis</li>
+                            <li><strong>Outcome 4 (Programming Languages):</strong> Built the entire system using Python with LangChain, OpenAI API, and Streamlit deployment</li>
+                            <li><strong>Outcome 6 (Ethics):</strong> Implemented privacy-conscious design with user data isolation to prevent data leakage</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">LangChain</span>
+                    <span class="tech-tag">OpenAI API</span>
+                    <span class="tech-tag">Streamlit</span>
+                    <span class="tech-tag">Vector Databases</span>
+                </div>
+            </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            <!-- Project 2: LLM Knowledge Distillation -->
+            <div class="project-card highlight">
+                <div class="project-header">
+                    <span class="project-badge">Featured</span>
+                    <h3 class="project-title">LLM Knowledge Distillation</h3>
+                    <a href="projects/ModelDistillationProject/DistilllationPaper.pdf" class="project-link" target="_blank">
+                        <i class="far fa-file-pdf"></i> Read Paper
+                    </a>
+                </div>
+                <div class="project-content">
+                    <p>Developed a comprehensive tutorial on utilizing large language models to produce smaller, specialized models through knowledge distillation. Presented findings at a symposium at the end of the NLP course.</p>
+                    <ul class="project-bullets">
+                        <li><strong>Developed</strong> a paper on how to utilize a large language model to produce smaller, specific models</li>
+                        <li><strong>Trained</strong> a model from Meta's Llama 3.1 and Google's BERT to identify spinal cord diseases</li>
+                        <li><strong>Utilized</strong> PyTorch to establish the model's framework, with CUDA allocation for efficient processing</li>
+                        <li><strong>Presented</strong> findings at a keynote presentation</li>
+                    </ul>
+                    <div class="learning-outcomes">
+                        <h4>Learning Outcomes Demonstrated:</h4>
+                        <ul>
+                            <li><strong>Outcome 4 (Programming Languages):</strong> Learned PyTorch framework through Python to implement the distillation process</li>
+                            <li><strong>Outcome 5 (Communication):</strong> Presented complex technical concepts to diverse audience at symposium</li>
+                            <li><strong>Outcome 6 (Ethics):</strong> Discussed ethical considerations of model reuse and specialization</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">PyTorch</span>
+                    <span class="tech-tag">Llama 3.1</span>
+                    <span class="tech-tag">BERT</span>
+                    <span class="tech-tag">CUDA</span>
+                </div>
+            </div>
 
-	</body>
+            <!-- Project 3: Data Warehouse -->
+            <div class="project-card highlight">
+                <div class="project-header">
+                    <span class="project-badge">Featured</span>
+                    <h3 class="project-title">Data Warehouse Optimized ETL</h3>
+                    <a href="projects/DataWarehouseOptimizedETL/Data Warehouse Final Project.pdf" class="project-link" target="_blank">
+                        <i class="far fa-file-pdf"></i> View Slides
+                    </a>
+                    <a href="https://github.com/adirubbo13/ist722dbt" class="project-link" target="_blank" style="margin-left: 10px;">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+                <div class="project-content">
+                    <p>Built a comprehensive data warehouse pipeline using Snowflake, dbt, and Power BI to analyze movie performance metrics from IMDb data. Designed business metrics and KPIs from the start to ensure meaningful insights.</p>
+                    <ul class="project-bullets">
+                        <li><strong>Built</strong> a Python, Snowflake, and dbt ETL pipeline to ingest IMDb data and load conformed dimensions</li>
+                        <li><strong>Modeled</strong> fact tables for ratings, releases, and genre trends with clear grains, keys, and documentation</li>
+                        <li><strong>Designed</strong> dimensional schemas for title, genre, time, person, and country to standardize analytics</li>
+                        <li><strong>Created</strong> Power BI dashboards to visualize rating patterns, release volumes, and genre performance</li>
+                    </ul>
+                    <div class="learning-outcomes">
+                        <h4>Learning Outcomes Demonstrated:</h4>
+                        <ul>
+                            <li><strong>Outcome 1 (Data Collection/Storage):</strong> Identified appropriate technologies at each stage, ensuring scalability and efficiency for the warehouse architecture</li>
+                            <li><strong>Outcome 2 (Actionable Insight):</strong> Defined business metrics early and structured the warehouse around them to generate aligned insights</li>
+                            <li><strong>Outcome 3 (Visualization):</strong> Created interactive PowerBI dashboards that visualized performance trends and metrics</li>
+                            <li><strong>Outcome 5 (Communication):</strong> Presented technical findings to classmates and instructors through the final dashboard demonstration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Snowflake</span>
+                    <span class="tech-tag">dbt Cloud</span>
+                    <span class="tech-tag">Power BI</span>
+                    <span class="tech-tag">SQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Projects Section -->
+    <section class="section all-projects">
+        <div class="container">
+            <h2 class="section-title">All Projects</h2>
+
+            <div class="projects-grid">
+                <!-- ML Predict Diabetes -->
+                <div class="project-card">
+                    <h3 class="project-title">Machine Learning to Predict Diabetes</h3>
+                    <p><a href="projects/MachineLearningToPredictDiabetes/MLPredictDiabetesSourceCode.html" class="project-link" target="_blank"><i class="fab fa-github"></i> Source Code</a></p>
+                    <ul class="project-bullets">
+                        <li>Built ML pipelines to predict Type II diabetes using non-clinical data from the CDC BRFSS survey</li>
+                        <li>Engineered and encoded 28+ features; applied SMOTE and PCA to handle high dimensionality</li>
+                        <li>Compared classification models (Logistic Regression, Random Forest, XGBoost, Neural Networks)</li>
+                        <li>Applied cross-validation, threshold tuning, focal loss, and synthetic sampling to improve performance</li>
+                    </ul>
+                </div>
+
+                <!-- Predicting Nutritional Content -->
+                <div class="project-card">
+                    <h3 class="project-title">Deep Learning to Predict Nutritional Content of Food from Images</h3>
+                    <p><a href="projects/PredictingNutritonalContentwithImages/DLPredictNutritionalContentReport.pdf" class="project-link" target="_blank"><i class="far fa-file-pdf"></i> Read Report</a> <a href="projects/PredictingNutritonalContentwithImages/DLPredictNutrionalContentSourceCode.ipynb" class="project-link" target="_blank"><i class="fab fa-github"></i> Source Code</a></p>
+                    <ul class="project-bullets">
+                        <li>Curated MM-Food-100K by parsing nutrient fields and selecting the top 50 classes for balanced training</li>
+                        <li>Built a ResNet-50 transfer learning model with augmentation, frozen layers, and epoch optimization</li>
+                        <li>Created a multithreaded pipeline to download, validate, and preprocess 100K+ food images</li>
+                        <li>Mapped model predictions to mean nutrient vectors to infer calories and macros from a single image</li>
+                    </ul>
+                </div>
+
+                <!-- LACCTiC API -->
+                <div class="project-card">
+                    <h3 class="project-title">API Evaluation and Analysis</h3>
+                    <p><a href="projects/PredictingCrossCountryRacesAPIEvaluation/LACCTiCReport.pdf" class="project-link" target="_blank"><i class="far fa-file-pdf"></i> Read Report</a> <a href="projects/PredictingCrossCountryRacesAPIEvaluation/LACCTICSourceCode.html" class="project-link" target="_blank"><i class="fab fa-github"></i> Source Code</a></p>
+                    <ul class="project-bullets">
+                        <li>Worked with a PhD graduate to evaluate their API which is used to rank cross country races</li>
+                        <li>Used Python libraries including Pandas, Matplotlib, and MongoDB to read and evaluate JSON data</li>
+                        <li>Developed a report which evaluates the performance of the API based on key metrics</li>
+                        <li>Created a program which allows for quick analysis of future races</li>
+                    </ul>
+                </div>
+
+                <!-- Heart Disease -->
+                <div class="project-card">
+                    <h3 class="project-title">Machine Learning with Heart Disease</h3>
+                    <p><a href="projects/PredictingMachineLearningWithHeartDisease/mlhd.html" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a></p>
+                    <ul class="project-bullets">
+                        <li>Developed models which input various recorded health metrics to predict heart disease development</li>
+                        <li>Project was completed alone with mentorship from a professor</li>
+                        <li>R, Excel, and Python were utilized to create various models which were evaluated against one another</li>
+                        <li>Findings were presented at an end of semester conference for senior thesis projects</li>
+                    </ul>
+                </div>
+
+                <!-- Keystone Post -->
+                <div class="project-card">
+                    <h3 class="project-title">Award Winning Data Journalism Article</h3>
+                    <p><a href="projects/NYCRemoteSchoolingArticle/KeystonePostPeerReviewed.pdf" class="project-link" target="_blank"><i class="far fa-file-pdf"></i> Read Article</a></p>
+                    <ul class="project-bullets">
+                        <li>Used data to prove if the NYC fully remote school district was a viable option</li>
+                        <li>Data was independently collected and sorted with MS Excel, then Tableau was used for visualizations</li>
+                        <li>Techniques from Tableau were developed on from a marketing visualization class</li>
+                        <li>The article won awards and scholarships from the Washington Media Scholars Foundations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Tessy Corportation</h3>
+                    <span class="experience-date">December 2025 - Present</span>
+                </div>
+                <h4 class="experience-title">Graduate Student AI Researcher</h4>
+                <ul class="experience-bullets">
+                    <li>Assisted in maintaining and extending capabilities for a .NET microservice environment</li>
+                    <li>Designed a JSON-driven workflow engine with dependency-aware task states and overrides</li>
+                    <li>Created and optimized SQL stored procedures for frontend integration using Azure Web Services</li>
+                    <li>Implemented a CI/CD DevOps pipeline for quick microservice upgrades and delivery</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Syracuse University</h3>
+                    <span class="experience-date">January 2025 - December 2025</span>
+                </div>
+                <h4 class="experience-title">Graduate Student AI Researcher</h4>
+                <ul class="experience-bullets">
+                    <li>Developing adaptive AI resources to enhance student learning and engagement</li>
+                    <li>Collaborating with a team of five graduate students, meeting bi-weekly to coordinate research efforts</li>
+                    <li>Leading semester-based projects focused on consistent AI themes across multiple terms</li>
+                    <li>Presenting research progress and outcomes at end-of-semester poster symposiums</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>CooperCompanies</h3>
+                    <span class="experience-date">March 2025 - August 2025</span>
+                </div>
+                <h4 class="experience-title">Master Data Co-op</h4>
+                <ul class="experience-bullets">
+                    <li>Utilized Java, Visual Basic, and Oracle to develop applications to assist with the data pipeline</li>
+                    <li>Constructed Python scripts to perform large-scale data changes and updates</li>
+                    <li>Reviewed and signed-off on data entry/changes to ensure data governance between regional systems</li>
+                    <li>Pulled data for inquiry and analysis for finance, sustainability, and customer service teams using SQL</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>St John Fisher University</h3>
+                    <span class="experience-date">August 2021 - May 2024</span>
+                </div>
+                <h4 class="experience-title">Peer Math and Computer Science Tutor</h4>
+                <ul class="experience-bullets">
+                    <li>Aided students in their development of various math and computer science principals</li>
+                    <li>Students requested appointments on a short-term basis and could also visit during assigned hours</li>
+                    <li>Technical support for Microsoft Excel, R, and Java was also given</li>
+                    <li>Students found themselves able to properly explain concepts and not need to request further support</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Team Connection, NC</h3>
+                    <span class="experience-date">Summer 2023</span>
+                </div>
+                <h4 class="experience-title">Web Development Intern</h4>
+                <ul class="experience-bullets">
+                    <li>Maintained and developed the storefront and website for the Team Connection brand</li>
+                    <li>Was the sole developer and worked closely with the president and marketing director</li>
+                    <li>Utilized WordPress, JavaScript, and SQL to develop webpages and maintain storefront data</li>
+                    <li>Internship concluded with a presentation with recommended next steps for the brand's webpage</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Stay Connected</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <a href="https://www.linkedin.com/in/tonydirubbo/" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://github.com/adirubbo13" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="mailto:afdirubb@syr.edu" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email Me</span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.instagram.com/tonydirubbo/" target="_blank" class="contact-link">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://huggingface.co/adirubbo13" target="_blank" class="contact-link">
+                        <i class="fas fa-smile-beam"></i>
+                        <span>HuggingFace</span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="pdf_documents/WebResume.pdf" target="_blank" class="contact-link">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Resume</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Tony DiRubbo. All Rights Reserved.</p>
+                <p class="footer-disclaimer">Last updated March 7th, 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- YouTube Video Modal -->
+    <div class="modal" id="videoModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <div class="video-container">
+                <iframe src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
