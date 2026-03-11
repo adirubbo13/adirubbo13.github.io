@@ -29,56 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ===================================
-    // Video Modal
+    // Video Modal (Removed)
     // ===================================
-    const videoBtn = document.getElementById('videoBtn');
-    const videoModal = document.getElementById('videoModal');
-    const closeModal = document.getElementById('closeModal');
-
-    if (videoBtn && videoModal) {
-        // Open modal
-        videoBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            openModal();
-        });
-
-        // Close modal via close button
-        closeModal.addEventListener('click', function() {
-            closeModalFunc();
-        });
-
-        // Close modal via clicking outside content
-        videoModal.addEventListener('click', function(e) {
-            if (e.target === videoModal) {
-                closeModalFunc();
-            }
-        });
-
-        // Close modal with Escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && videoModal.classList.contains('active')) {
-                closeModalFunc();
-            }
-        });
-    }
-
-    function openModal() {
-        videoModal.classList.add('active');
-        // Set the YouTube embed URL when opening the modal to avoid configuration errors
-        var iframe = document.querySelector('#videoModal iframe');
-        if (iframe && iframe.src === '') {
-            iframe.src = 'https://www.youtube.com/embed/7hgIQyVxDck?enablejsapi=1';
-        }
-    }
-
-    function closeModalFunc() {
-        videoModal.classList.remove('active');
-        // Clear the iframe src when closing to stop video playback
-        var iframe = document.querySelector('#videoModal iframe');
-        if (iframe) {
-            iframe.src = '';
-        }
-    }
 
     // ===================================
     // Scroll Animation

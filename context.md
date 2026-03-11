@@ -10,7 +10,7 @@ PortfolioRepo_CC/
 ├── blog.html           # Blog post / personal statement
 ├── outcomes.html       # Learning outcomes page
 ├── styles.css          # All styling (responsive, mobile-first)
-├── script.js           # Interactive elements (modal, mobile menu, scroll)
+├── script.js           # Interactive elements (mobile menu, scroll)
 └── misc/
     ├── images/
     │   ├── avatar.jpg  # Tony's headshot
@@ -30,7 +30,7 @@ PortfolioRepo_CC/
 - Fixed navbar with scroll effect
 - Mobile-responsive hamburger menu
 - Smooth scrolling to sections
-- Video popup modal (YouTube video at https://youtu.be/7hgIQyVxDck)
+- Video link opens in a new tab
 
 ### Pages
 1. **index.html** - Main portfolio with:
