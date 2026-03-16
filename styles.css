@@ -704,6 +704,16 @@ h2 {
     line-height: 1.8;
 }
 
+.blog-header-image {
+    float: right;
+    max-width: 40%;
+    height: auto;
+    border-radius: 12px;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--card-shadow);
+}
+
 /* Learning Outcomes Page */
 .outcomes-page {
     padding-top: 100px;
