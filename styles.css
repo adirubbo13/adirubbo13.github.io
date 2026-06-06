@@ -422,32 +422,6 @@ h2 {
     font-weight: 500;
 }
 
-.learning-outcomes {
-    margin-top: 1.5rem;
-    padding: 1rem;
-    background: var(--bg-secondary);
-    border-radius: 8px;
-    border-left: 3px solid var(--primary-color);
-}
-
-.learning-outcomes h4 {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    color: var(--primary-color);
-    text-transform: uppercase;
-}
-
-.learning-outcomes ul {
-    margin: 0;
-    padding-left: 1.25rem;
-    font-size: 0.9rem;
-}
-
-.learning-outcomes li {
-    margin-bottom: 0.5rem;
-    color: var(--text-color);
-    line-height: 1.5;
-}
 
 /* All Projects Section */
 .all-projects .container {
@@ -714,95 +688,6 @@ h2 {
     box-shadow: var(--card-shadow);
 }
 
-/* Learning Outcomes Page */
-.outcomes-page {
-    padding-top: 100px;
-    padding-bottom: 80px;
-}
-
-.outcomes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.outcome-card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: var(--card-shadow);
-    border-left: 4px solid var(--primary-color);
-}
-
-.outcome-number {
-    background: var(--primary-color);
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.outcome-title {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    color: var(--accent-color);
-}
-
-.outcome-projects {
-    margin-top: 1.5rem;
-}
-
-.outcome-projects h4 {
-    font-size: 0.9rem;
-    color: var(--text-light);
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-}
-
-.outcome-projects ul {
-    margin: 0;
-    padding-left: 1.25rem;
-}
-
-.outcome-projects li {
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-    color: var(--text-color);
-}
-
-.tracks-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-}
-
-.track-card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: var(--card-shadow);
-    border-top: 4px solid var(--primary-color);
-}
-
-.track-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--primary-color);
-}
-
-.track-card p {
-    margin-bottom: 1rem;
-}
-
-.track-card ul {
-    padding-left: 1.5rem;
-}
 
 /* Responsive Design */
 @media (max-width: 968px) {

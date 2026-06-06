@@ -1,14 +1,13 @@
 # Portfolio Context Documentation
 
 ## Overview
-This is Tony DiRubbo's personal data science portfolio, built for the Syracuse University Applied Data Science program (IST 782 - Portfolio Review Course).
+This is Tony DiRubbo's personal data science portfolio.
 
 ## Project Structure
 ```
 PortfolioRepo_CC/
 ├── index.html           # Main portfolio page (single-page layout)
 ├── blog.html           # Blog post / personal statement
-├── outcomes.html       # Learning outcomes page
 ├── styles.css          # All styling (responsive, mobile-first)
 ├── script.js           # Interactive elements (mobile menu, scroll)
 └── misc/
@@ -41,17 +40,13 @@ PortfolioRepo_CC/
    - Work experience section
    - Contact section with social media links
 
-2. **blog.html** - Personal statement (~3,000 words) covering:
+2. **blog.html** - Personal statement (~2,500 words) covering:
    - Journey to graduate school
    - Academic experiences at Syracuse
-   - All six program learning outcomes with project examples
+   - Project highlights with technical details
    - Track selections (AI and Data Pipelines)
    - Professional experiences (co-ops, research)
 
-3. **outcomes.html** - Learning outcomes page mapping:
-   - All 6 learning outcomes
-   - How each was achieved through specific projects
-   - Track-based learning pathway
 
 ### Responsive Design
 - Mobile-first approach
